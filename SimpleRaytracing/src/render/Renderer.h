@@ -17,7 +17,7 @@ public:
 	std::shared_ptr<Walnut::Image> GetFinalImage() const { return m_finalImage; }
 
 private:
-	uint32_t perPixel(glm::vec2 coord);
+	glm::vec4 perPixel(glm::vec2 coord);
 
 private:
 	std::shared_ptr<Walnut::Image> m_finalImage;
